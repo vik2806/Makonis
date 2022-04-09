@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Makonis/bin/Debug/net5.0
+/Makonis/obj
+/Makonis_API/bin/Debug/net5.0
+/Makonis_API/obj

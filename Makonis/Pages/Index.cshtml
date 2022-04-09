@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Fill below details and submit to save in json.</p>
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="dataModel.FirstName" class="control-label"></label>
+            <input asp-for="dataModel.FirstName" class="form-control" />
+            <span asp-validation-for="dataModel.FirstName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="dataModel.LastName" class="control-label"></label>
+            <input asp-for="dataModel.LastName" class="form-control" />
+            <span asp-validation-for="dataModel.LastName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
